@@ -25,7 +25,7 @@ itsdangerous==2.1.2
 Jinja2==3.1.2
 login==0.0.6
 MarkupSafe==2.1.1
-Pillow==9.2.0
+Pillow==10.0.1
 pipenv==2022.9.8
 platformdirs==2.5.2
 pycparser==2.21
