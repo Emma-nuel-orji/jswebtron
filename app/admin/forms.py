@@ -4,7 +4,7 @@ from flask_wtf.file import FileAllowed, FileField
 from wtforms import SubmitField, StringField
 from wtforms.validators import DataRequired, Email, ValidationError, length
 
-from wizapp.models import User
+from app.models import User
 
 
 class UpdateAccountForm(FlaskForm):

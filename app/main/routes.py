@@ -2,10 +2,10 @@ from flask import Blueprint, request, render_template, flash, url_for, flash, re
 from flask_login import login_required, current_user
 from flask_mail import Message
 
-from wizapp import db, mail
-from wizapp.forms import ContactForm
-from wizapp import mail
-from wizapp.models import Post, User
+from app import db, mail
+from app.forms import ContactForm
+from app import mail
+from app.models import Post, User
 
 main = Blueprint('main', __name__)
 

@@ -4,7 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
-from wizapp.config import config
+from app.config import config
 
 app = Flask(__name__)
 app.config.from_object(config)
@@ -26,10 +26,10 @@ def create_app(config_class=config):
     login_manager.init_app(app)
     mail.init_app(app)
 
-    from wizapp.users.routes import users
-    from wizapp.posts.routes import posts
-    from wizapp.admin.routes import admin
-    from wizapp.main.routes import main
+    from app.users.routes import users
+    from app.posts.routes import posts
+    from app.admin.routes import admin
+    from app.main.routes import main
     app.register_blueprint(users)
     app.register_blueprint(posts)
     app.register_blueprint(admin)

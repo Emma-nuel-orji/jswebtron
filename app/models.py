@@ -1,8 +1,8 @@
 from datetime import datetime
 from flask import current_app
 from flask_login import UserMixin
-from wizapp import login_manager
-from wizapp import db
+from app import login_manager
+from app import db
 import jwt
 from time import time
 

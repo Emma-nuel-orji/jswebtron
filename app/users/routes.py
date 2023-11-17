@@ -1,9 +1,9 @@
 from flask import Blueprint, redirect, url_for, flash, render_template, request
 from flask_login import current_user, login_user, logout_user
-from wizapp import bcrypt, db
-from wizapp.models import User
-from wizapp.users.forms import RegistrationForm, LoginForm, RequestResetForm, ResetPasswordForm
-from wizapp.users.utils import send_password_reset_email
+from app import bcrypt, db
+from app.models import User
+from app.users.forms import RegistrationForm, LoginForm, RequestResetForm, ResetPasswordForm
+from app.users.utils import send_password_reset_email
 
 users = Blueprint('users', __name__)
 

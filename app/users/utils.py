@@ -3,7 +3,7 @@ import secrets
 from PIL import Image
 from flask_mail import Message
 from threading import Thread
-from wizapp import mail
+from app import mail
 from flask import render_template, current_app
 
 

@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, StringField, PasswordField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError, length, equal_to, Email
 
-from wizapp.models import User
+from app.models import User
 
 
 class RegistrationForm(FlaskForm):
@@ -47,8 +47,9 @@ class ResetPasswordForm(FlaskForm):
 
 
 class ContactForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired(), length(min=2, max=2000)])
-    contact_email = StringField('Email', validators=[DataRequired(), Email()])
-    subject = StringField('Subject', validators=[DataRequired()])
-    message = TextAreaField('Message', validators=[DataRequired()])
+    name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    contact_email = StringField('', validators=[DataRequired(), Email()])
+    contact_phone = StringField('', validators=[DataRequired()])
+    subject = StringField('', validators=[DataRequired()])
+    message = TextAreaField('', validators=[DataRequired()])
     submit = SubmitField('Send Mail')

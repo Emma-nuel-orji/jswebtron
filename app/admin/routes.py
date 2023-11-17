@@ -1,10 +1,10 @@
 from flask import Blueprint, flash, redirect, render_template, url_for, request
 from flask_login import login_required, current_user
 
-from wizapp import db
-from wizapp.admin.forms import UpdateAccountForm
-from wizapp.models import User, Post
-from wizapp.users.utils import save_picture
+from app import db
+from app.admin.forms import UpdateAccountForm
+from app.models import User, Post
+from app.users.utils import save_picture
 
 admin = Blueprint('admin', __name__)
 

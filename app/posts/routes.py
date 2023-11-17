@@ -1,9 +1,9 @@
 from flask import Blueprint, request, flash, redirect, render_template, url_for, abort
 from flask_login import current_user, login_required
-from wizapp import db
-from wizapp.models import Post, Comment
-from wizapp.posts.forms import postForm
-from wizapp.users.utils import blog_image
+from app import db
+from app.models import Post, Comment
+from app.posts.forms import postForm
+from app.users.utils import blog_image
 
 posts = Blueprint('posts', __name__)
 
