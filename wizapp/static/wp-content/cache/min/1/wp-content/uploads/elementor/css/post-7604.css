@@ -1,0 +1,103 @@
+.elementor-7604 .elementor-element.elementor-element-2e5c0bc0>.elementor-container>.elementor-column>.elementor-widget-wrap {
+    align-content: center;
+    align-items: center
+}
+
+.elementor-7604 .elementor-element.elementor-element-2e5c0bc0:not(.elementor-motion-effects-element-type-background),
+.elementor-7604 .elementor-element.elementor-element-2e5c0bc0>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: var(--e-global-color-32b6992);
+    background-image: url(https://www.casvodigital.com/wp-content/uploads/2021/10/img-1-1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.elementor-7604 .elementor-element.elementor-element-2e5c0bc0>.elementor-background-overlay {
+    opacity: .5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s
+}
+
+.elementor-7604 .elementor-element.elementor-element-2e5c0bc0 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: -30px -30px -30px -30px;
+    padding: 20px 40px 20px 40px
+}
+
+.elementor-7604 .elementor-element.elementor-element-2d3f2031 .title {
+    color: #FFF;
+    line-height: .8em
+}
+
+.elementor-7604 .elementor-element.elementor-element-2d3f2031 .title-after_title {
+    color: var(--e-global-color-76a6886);
+    line-height: 1em
+}
+
+.elementor-7604 .elementor-element.elementor-element-f136d20>.elementor-widget-container {
+    margin: -40px 0 0 0
+}
+
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated>.elementor-background-overlay {
+    background-color: var(--e-global-color-76a6886);
+    opacity: .7
+}
+
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated,
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated>.elementor-background-overlay,
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-background-slideshow {
+    border-radius: 40px 40px 40px 40px
+}
+
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s
+}
+
+.elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated>.elementor-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s
+}
+
+.elementor-7604 .elementor-element.elementor-element-daaa873 .wd-text-block {
+    font-size: 16px;
+    line-height: 2em;
+    color: #FFF
+}
+
+@media(max-width:1024px) {
+    .elementor-7604 .elementor-element.elementor-element-2d3f2031 .title {
+        font-size: 38px
+    }
+    .elementor-7604 .elementor-element.elementor-element-2d3f2031 .title-after_title {
+        font-size: 15px
+    }
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated,
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated>.elementor-background-overlay,
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-background-slideshow {
+        border-radius: 50px 50px 50px 50px
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-7604 .elementor-element.elementor-element-2e5c0bc0:not(.elementor-motion-effects-element-type-background),
+    .elementor-7604 .elementor-element.elementor-element-2e5c0bc0>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        background-image: url(https://www.casvodigital.com/wp-content/uploads/2021/10/img-1.png);
+        background-position: bottom left;
+        background-size: auto
+    }
+    .elementor-7604 .elementor-element.elementor-element-2e5c0bc0 {
+        padding: 10% 10% 10% 10%
+    }
+    .elementor-7604 .elementor-element.elementor-element-2d3f2031 .title {
+        font-size: 30px
+    }
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated,
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated>.elementor-background-overlay,
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-background-slideshow {
+        border-radius: 30px 30px 30px 30px
+    }
+    .elementor-7604 .elementor-element.elementor-element-32d4a737>.elementor-element-populated {
+        margin: 20px 20px 20px 20px;
+        --e-column-margin-right: 20px;
+        --e-column-margin-left: 20px;
+        padding: 30px 30px 30px 30px
+    }
+}
