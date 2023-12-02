@@ -52,4 +52,20 @@ class ContactForm(FlaskForm):
     contact_phone = StringField('', validators=[DataRequired()])
     subject = StringField('', validators=[DataRequired()])
     message = TextAreaField('', validators=[DataRequired()])
+    brand_name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    submit = SubmitField('Send Mail')
+
+
+class ContactusForm(FlaskForm):
+    brand_name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    contactemail = StringField('', validators=[DataRequired(), Email()])
+    phonenumber = StringField('', validators=[DataRequired()])
+    management = BooleanField('')
+    searchengine = BooleanField('')
+    branding = BooleanField('')
+    website = BooleanField('')
+    digital = BooleanField('')
+    graphic = BooleanField('')
+    logocreation = BooleanField('')
+    videocreation = BooleanField('')
     submit = SubmitField('Send Mail')

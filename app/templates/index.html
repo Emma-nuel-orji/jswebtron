@@ -256,8 +256,10 @@
         <meta name="application-name" content="Jswebtron">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <link rel="apple-touch-icon" href="logo/mail.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="logo/mail.png">
+        <link rel="icon" href="static/logo/mail.png" sizes="32x32" />
+        <link rel="icon" href="static/logo/mail.png" sizes="192x192" />
+        <meta name="msapplication-TileImage" content="static/logo/mail.png" />
+     
         <!-- / SuperPWA.com -->
         <title>Jswebtron Marketing &amp; Advertising Agency, Enugu, Nigeria</title>
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lato%3A400%2C700%7CJost%3A400%2C600%2C500%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap"
@@ -1011,9 +1013,9 @@
 src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
 </noscript>
             <!-- End Meta Pixel Code -->
-            <link rel="icon" href="logo/mail.png" sizes="32x32" />
-            <link rel="icon" href="logo/mail.png" sizes="192x192" />
-            <meta name="msapplication-TileImage" content="logo/mail.png" />
+            <link rel="icon" href="static/logo/mail.png" sizes="32x32" />
+            <link rel="icon" href="static/logo/mail.png" sizes="192x192" />
+            <meta name="msapplication-TileImage" content="static/logo/mail.png" />
             <style type="text/css" id="wp-custom-css">
                 body {
                     color: #585858;
@@ -1225,7 +1227,7 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                         <div class="whb-flex-row whb-general-header-inner">
                             <div class="whb-column whb-col-left whb-visible-lg">
                                 <div class="site-logo">
-                                    <a href="index.html" class="wd-logo wd-main-logo" rel="home">
+                                    <a href="{{url_for('main.home')}}" class="wd-logo wd-main-logo" rel="home">
 		<img src="static/logo/mail.png" alt="Jswebtron" style="max-width: 190px;" data-lazy-src="static/logo/mail.png" /><noscript><img src="static/logo/mail.png" alt="Jswebtron" style="max-width: 190px;" /></noscript>	</a>
                                 </div>
                             </div>
@@ -1237,17 +1239,17 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                                                 <div class="container">
                                                     <ul class="wd-sub-menu color-scheme-dark">
                                                       
-                                                        <li id="menu-item-9764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9764 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">Digital Marketing</a></li>
-                                                        <li id="menu-item-9766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9766 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">Social Media Management</a></li>
-                                                        <li id="menu-item-9226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9226 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">Web Development</a></li>
-                                                        <li id="menu-item-9762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9762 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">ALL-IN-ONE PACKAGES</a></li>
-                                                        <li id="menu-item-9763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9763 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">Creative Designs</a></li>
-                                                        <li id="menu-item-9767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9767 item-level-1 wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link">Video Adverts</a></li>
+                                                        <li id="menu-item-9764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9764 item-level-1 wd-event-hover"><a href="{{ url_for('main.digital_marketing') }}" class="woodmart-nav-link">Digital Marketing</a></li>
+                                                        <li id="menu-item-9766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9766 item-level-1 wd-event-hover"><a href="{{ url_for('main.socialmediamanagement') }}" class="woodmart-nav-link">Social Media Management</a></li>
+                                                        <li id="menu-item-9226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9226 item-level-1 wd-event-hover"><a href="{{ url_for('main.web') }}" class="woodmart-nav-link">Web Development</a></li>
+                                                        <li id="menu-item-9762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9762 item-level-1 wd-event-hover"><a href="{{ url_for('main.all_in_one') }}" class="woodmart-nav-link">ALL-IN-ONE PACKAGES</a></li>
+                                                        <li id="menu-item-9763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9763 item-level-1 wd-event-hover"><a href="{{ url_for('main.graphics') }}" class="woodmart-nav-link">Creative Designs</a></li>
+                                                        <li id="menu-item-9767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9767 item-level-1 wd-event-hover"><a href="{{ url_for('main.video_ad') }}" class="woodmart-nav-link">Video Adverts</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li id="menu-item-9765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9765 item-level-0 menu-simple-dropdown wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link"><span class="nav-link-text">Our Works</span></a></li>
+                                        <li id="menu-item-9765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9765 item-level-0 menu-simple-dropdown wd-event-hover"><a href="{{ url_for('main.ourwork') }}" class="woodmart-nav-link"><span class="nav-link-text">Our Works</span></a></li>
                                         <li id="menu-item-9224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9224 item-level-0 menu-simple-dropdown wd-event-hover"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link"><span class="nav-link-text">About us</span></a></li>
                                         <li id="menu-item-9225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9225 item-level-0 menu-simple-dropdown wd-event-hover"><a href="{{ url_for('main.contact') }}" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a></li>
                                         <li id="menu-item-9229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9229 item-level-0 menu-simple-dropdown wd-event-hover"><a href="{{ url_for('main.blog') }}" class="woodmart-nav-link"><span class="nav-link-text">Blog</span></a></li>
@@ -1268,7 +1270,7 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                                                                 <div class="wd-button-wrapper text-center">
                                                                     <a class="btn btn-style-default btn-style-round btn-size-default wd-open-popup btn-color-primary btn-icon-pos-right" href="#popup-61755eac78c2a">
 				                                                        <span class="wd-btn-text" data-elementor-setting-key="text">
-					                                                       Contact Us				
+					                                                       Reach Out To Us				
                                                                         </span> 
 							                                        </a>
                                                                 </div>
@@ -1301,45 +1303,142 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                                                                                             <div class="elementor-element elementor-element-f136d20 elementor-widget elementor-widget-wpforms" data-id="f136d20" data-element_type="widget" data-widget_type="wpforms.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div class="wpforms-container wpforms-container-full" id="wpforms-9725">
-                                                                                                        <form id="wpforms-form-9725" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="9725" method="post" enctype="multipart/form-data" action="/"
-                                                                                                            data-token="ff94238126b728e77d4eb436cbcd7694">
+                                                                                                        <form id="wpforms-form-9725" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="9725" method="POST" enctype="multipart/form-data" action=""
+                                                                                                            data-token="d1ff3203b342ad7f818cf3c267d055d4">
+                                                                                                            {{ form.hidden_tag() }}
+                                                                                                            <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
                                                                                                             <div class="wpforms-field-container">
-                                                                                                                <!-- <h2>Contact JSWEBTRON LTD</h2> -->
-                                                                                                                <p>Welcome to JSWEBTRON LTD, where your satisfaction is our top priority. We are here to assist you with any questions, inquiries, or requests you may have. Our dedicated team is ready to provide you with the support you need. Just click the "Contact Us" button below, and we will ensure you receive the assistance you deserve.
-                                                                                                                
-                                                                                                                Whether you're interested in our services, have a specific project in mind, or simply want to get to know us better, we're just an email away. Feel free to reach out, and we will contact you as soon as possible.
-                                                                                                                
-                                                                                                                Your feedback and queries are essential to us, and we're committed to delivering the highest level of service. Let us know how we can assist you today.
-                                                                                                                
-                                                                                                                
-                                                                                                                
-                                                                                                                <div id="wpforms-9725-field_6-container" class="wpforms-field wpforms-field-checkbox" data-field-id="6"><label class="wpforms-field-label" for="wpforms-9725-field_6">Jswebtron Can Offer You:</label>
+                                                                                                                <div id="wpforms-9725-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label" for="wpforms-9725-field_1">Your Brand Name <span class="wpforms-required-label">*</span></label>
+                                                                                                                    {{ form.brand_name.label(class= "form-control-label") }}
+                                                                                                                        {% if form.brand_name.errors %}
+                                                                                                                            {{ form.brand_name(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.brand_name.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.brand_name(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!---<input type="text"
+                                                                                                                        id="wpforms-9725-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required>----->
+                                                                                                                    </div>
+                                                                                                                <div id="wpforms-9725-field_3-container"
+                                                                                                                    class="wpforms-field wpforms-field-phone" data-field-id="3"><label class="wpforms-field-label" for="wpforms-9725-field_3">Your Phone Number <span class="wpforms-required-label">*</span></label>
+                                                                                                                    {{ form.phonenumber.label(class= "form-control-label") }}
+                                                                                                                        {% if form.phonenumber.errors %}
+                                                                                                                            {{ form.phonenumber(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.phonenumber.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.phonenumber(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!---<input type="tel" id="wpforms-9725-field_3" class="wpforms-field-medium wpforms-field-required wpforms-smart-phone-field" data-rule-smart-phone-field="true"
+                                                                                                                        name="wpforms[fields][3]" required>--->
+                                                                                                                        <div class="wpforms-field-description">Enter your WhatsApp number if available.</div>
+                                                                                                                </div>
+                                                                                                                <div id="wpforms-9725-field_7-container" class="wpforms-field wpforms-field-email" data-field-id="7"><label class="wpforms-field-label" for="wpforms-9725-field_7">Your Email Address</label>
+                                                                                                                    {{ form.contactemail.label(class= "form-control-label") }}
+                                                                                                                        {% if form.contactemail.errors %}
+                                                                                                                            {{ form.contactemail(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.contactemail.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.contactemail(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!----- <input type="email" id="wpforms-9725-field_7" class="wpforms-field-medium" name="wpforms[fields][7]">--->
+                                                                                                                    </div>
+                                                                                                                <div id="wpforms-9725-field_6-container" class="wpforms-field wpforms-field-checkbox" data-field-id="6"><label class="wpforms-field-label" for="wpforms-9725-field_6">What Does Your Brand Need?</label>
                                                                                                                     <ul id="wpforms-9725-field_6">
-                                                                                                                        <li class="choice-5 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_5" name="wpforms[fields][6][]" value="Social Media Management"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_5">Social Media Management</label></li>
-                                                                                                                        <li class="choice-6 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_6" name="wpforms[fields][6][]" value="Search Engine Optimization"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_6">Search Engine Optimization</label></li>
-                                                                                                                        <li class="choice-3 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_3" name="wpforms[fields][6][]" value="Full Branding Packages"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_3">Full Branding Packages</label></li>
-                                                                                                                        <li class="choice-1 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_1" name="wpforms[fields][6][]" value="Website Development"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_1">Website Development</label></li>
-                                                                                                                        <li class="choice-2 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_2" name="wpforms[fields][6][]" value="Digital Marketing"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_2">Digital Marketing</label></li>
-                                                                                                                        <li class="choice-7 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_7" name="wpforms[fields][6][]" value="Graphic Designs"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_7">Graphic Designs</label></li>
-                                                                                                                        <li class="choice-8 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_8" name="wpforms[fields][6][]" value="Logo Creation"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_8">Logo Creation</label></li>
-                                                                                                                        <li class="choice-4 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_4" name="wpforms[fields][6][]" value="Video Creation"><label class="wpforms-field-label-inline"
-                                                                                                                                for="wpforms-9725-field_6_4">Video Creation</label></li>
+                                                                                                                        <li class="choice-5 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_5">Social Media Management</label>
+                                                                                                                            <input type="checkbox" name="management" {% if form.management.data %} checked {% endif %}>
+
+                                                                                                                            <!---<div class="form-check">
+                                                                                                                                {{ form.management(class="form-check-input") }}
+                                                                                                                                {{ form.management.label(class="form-check-input-label") }}
+                                                                                                                            </div>--->
+                                                                                                                            
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_5" name="wpforms[fields][6][]" value="Social Media Management">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-6 depth-1">          
+                                                                                                                             <label class="wpforms-field-label-inline" for="wpforms-9725-field_6_6">Search Engine Optimization</label>
+
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.searchengine(class="form-check-input") }}
+                                                                                                                                {{ form.searchengine.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_6" name="wpforms[fields][6][]" value="Search Engine Optimization">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-3 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_3">Full Branding Packages</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.branding(class="form-check-input") }}
+                                                                                                                                {{ form.branding.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_3" name="wpforms[fields][6][]" value="Full Branding Packages">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-1 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_1">Website Development</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.website(class="form-check-input") }}
+                                                                                                                                {{ form.website.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_1" name="wpforms[fields][6][]" value="Website Development">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-2 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_2">Digital Marketing</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.digital(class="form-check-input") }}
+                                                                                                                                {{ form.digital.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_2" name="wpforms[fields][6][]" value="Digital Marketing">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-7 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_7">Graphic Designs</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.graphic(class="form-check-input") }}
+                                                                                                                                {{ form.graphic.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_7" name="wpforms[fields][6][]" value="Graphic Designs">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-8 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_8">Logo Creation</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.logocreation(class="form-check-input") }}
+                                                                                                                                {{ form.logocreation.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_8" name="wpforms[fields][6][]" value="Logo Creation">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-4 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_4">Video Creation</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.videocreation(class="form-check-input") }}
+                                                                                                                                {{ form.videocreation.label(class="form-check-input-label") }}
+                                                                                                                            </div> 
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_4" name="wpforms[fields][6][]" value="Video Creation">--->
+                                                                                                                            </li>
                                                                                                                     </ul>
-                                                                                                                    <!-- <div class="wpforms-field-description">Select all that apply</div> -->
+                                                                                                                    <div class="wpforms-field-description">Select all that apply</div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="9725"><input type="hidden" name="wpforms[author]" value="0">
-                                                                                                                
-                                                                                                                <input type="hidden" name="wpforms[post_id]"
-                                                                                                                    value="7594">
-                                                                                                                    <button type="submit" name="wpforms[submit]"  value="wpforms-submit"><a href="mailto:info@jswebtron.com" class="contact-button" style="color: #000;">Contact Us</a></button></div>
+                                                                                                            <div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="9725"><input type="hidden" name="wpforms[author]" value="0">{{ form.submit( class="col-md-3 col-sm-6 btn btn-success") }}
+                                                                                                                <img
+                                                                                                                    src="https://www.casvodigital.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;"
+                                                                                                                    width="26" height="26" alt="Loading"></div>
                                                                                                         </form>
                                                                                                     </div>
                                                                                                     <!-- .wpforms-container -->
@@ -1556,7 +1655,7 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                                                             <div class="wd-button-wrapper text-center">
                                                                 <a class="btn btn-style-default btn-style-round btn-size-large wd-open-popup btn-color-primary btn-icon-pos-right" href="#popup-60a65937b7de5">
 				<span class="wd-btn-text" data-elementor-setting-key="text">
-					TALK TO US NOW				</span>
+					EMAIL US NOW				</span>
 
 							</a>
                                                             </div>
@@ -1902,7 +2001,7 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
                                                     <div class="elementor-element elementor-element-634e865 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="634e865" data-element_type="widget" data-widget_type="button.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-button-wrapper">
-                                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="allinone/all-in-one/index.html">
+                                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url_for('main.all_in_one') }}">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">SEE PACKAGES</span>
 		</span>
@@ -2953,9 +3052,9 @@ Clients</span> and Counting</h4>
                                     <div class="elementor-element elementor-element-6e5c1b4c elementor-widget__width-auto elementor-widget elementor-widget-wd_popup" data-id="6e5c1b4c" data-element_type="widget" data-widget_type="wd_popup.default">
                                         <div class="elementor-widget-container">
                                             <div class="wd-button-wrapper text-center">
-                                                <a class="btn btn-style-default btn-style-round btn-size-extra-large wd-open-popup btn-color-primary btn-icon-pos-right" href="#popup-60a65937b7de5">
+                                                <a class="btn btn-style-default btn-style-round btn-size-extra-large wd-open-popup btn-color-primary btn-icon-pos-right" href="#popup-61755eac78c2a">
 				<span class="wd-btn-text" data-elementor-setting-key="text">
-					Contact Us				</span>
+					REACH OUT TO Us				</span>
 
 							</a>
                                             </div>
@@ -2988,46 +3087,143 @@ Clients</span> and Counting</h4>
                                                                         <div class="elementor-element elementor-element-f136d20 elementor-widget elementor-widget-wpforms" data-id="f136d20" data-element_type="widget" data-widget_type="wpforms.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="wpforms-container wpforms-container-full" id="wpforms-9725">
-                                                                                    <form id="wpforms-form-9725" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="9725" method="post" enctype="multipart/form-data" action="/"
-                                                                                    data-token="ff94238126b728e77d4eb436cbcd7694">
-                                                                                    <div class="wpforms-field-container">
-                                                                                        <!-- <h2>Contact JSWEBTRON LTD</h2> -->
-                                                                                        <p>Welcome to JSWEBTRON LTD, where your satisfaction is our top priority. We are here to assist you with any questions, inquiries, or requests you may have. Our dedicated team is ready to provide you with the support you need. Just click the "Contact Us" button below, and we will ensure you receive the assistance you deserve.
-                                                                                        
-                                                                                        Whether you're interested in our services, have a specific project in mind, or simply want to get to know us better, we're just an email away. Feel free to reach out, and we will contact you as soon as possible.
-                                                                                        
-                                                                                        Your feedback and queries are essential to us, and we're committed to delivering the highest level of service. Let us know how we can assist you today.
-                                                                                        
-                                                                                        
-                                                                                        
-                                                                                        <div id="wpforms-9725-field_6-container" class="wpforms-field wpforms-field-checkbox" data-field-id="6"><label class="wpforms-field-label" for="wpforms-9725-field_6">Jswebtron Can Offer You:</label>
-                                                                                            <ul id="wpforms-9725-field_6">
-                                                                                                <li class="choice-5 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_5" name="wpforms[fields][6][]" value="Social Media Management"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_5">Social Media Management</label></li>
-                                                                                                <li class="choice-6 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_6" name="wpforms[fields][6][]" value="Search Engine Optimization"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_6">Search Engine Optimization</label></li>
-                                                                                                <li class="choice-3 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_3" name="wpforms[fields][6][]" value="Full Branding Packages"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_3">Full Branding Packages</label></li>
-                                                                                                <li class="choice-1 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_1" name="wpforms[fields][6][]" value="Website Development"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_1">Website Development</label></li>
-                                                                                                <li class="choice-2 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_2" name="wpforms[fields][6][]" value="Digital Marketing"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_2">Digital Marketing</label></li>
-                                                                                                <li class="choice-7 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_7" name="wpforms[fields][6][]" value="Graphic Designs"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_7">Graphic Designs</label></li>
-                                                                                                <li class="choice-8 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_8" name="wpforms[fields][6][]" value="Logo Creation"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_8">Logo Creation</label></li>
-                                                                                                <li class="choice-4 depth-1"><input disabled type="checkbox" id="wpforms-9725-field_6_4" name="wpforms[fields][6][]" value="Video Creation"><label class="wpforms-field-label-inline"
-                                                                                                        for="wpforms-9725-field_6_4">Video Creation</label></li>
-                                                                                            </ul>
-                                                                                            <!-- <div class="wpforms-field-description">Select all that apply</div> -->
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="9725"><input type="hidden" name="wpforms[author]" value="0">
-                                                                                        
-                                                                                        <input type="hidden" name="wpforms[post_id]"
-                                                                                            value="7594">
-                                                                                            <button type="submit" name="wpforms[submit]"  value="wpforms-submit"><a href="mailto:info@jswebtron.com" class="contact-button" style="color: #000;">Contact Us</a></button></div>
-                                                                                </form>
+                                                                                    <form id="wpforms-form-9725" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="9725" method="POST" enctype="multipart/form-data" action=""
+                                                                                                            data-token="d1ff3203b342ad7f818cf3c267d055d4">
+                                                                                                            {{ form.hidden_tag() }}
+                                                                                                            <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
+                                                                                                            <div class="wpforms-field-container">
+                                                                                                                <div id="wpforms-9725-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label" for="wpforms-9725-field_1">Your Brand Name <span class="wpforms-required-label">*</span></label>
+                                                                                                                    {{ form.brand_name.label(class= "form-control-label") }}
+                                                                                                                        {% if form.brand_name.errors %}
+                                                                                                                            {{ form.brand_name(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.brand_name.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.brand_name(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!---<input type="text"
+                                                                                                                        id="wpforms-9725-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" required>----->
+                                                                                                                    </div>
+                                                                                                                <div id="wpforms-9725-field_3-container"
+                                                                                                                    class="wpforms-field wpforms-field-phone" data-field-id="3"><label class="wpforms-field-label" for="wpforms-9725-field_3">Your Phone Number <span class="wpforms-required-label">*</span></label>
+                                                                                                                    {{ form.phonenumber.label(class= "form-control-label") }}
+                                                                                                                        {% if form.phonenumber.errors %}
+                                                                                                                            {{ form.phonenumber(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.phonenumber.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.phonenumber(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!---<input type="tel" id="wpforms-9725-field_3" class="wpforms-field-medium wpforms-field-required wpforms-smart-phone-field" data-rule-smart-phone-field="true"
+                                                                                                                        name="wpforms[fields][3]" required>--->
+                                                                                                                        <div class="wpforms-field-description">Enter your WhatsApp number if available.</div>
+                                                                                                                </div>
+                                                                                                                <div id="wpforms-9725-field_7-container" class="wpforms-field wpforms-field-email" data-field-id="7"><label class="wpforms-field-label" for="wpforms-9725-field_7">Your Email Address</label>
+                                                                                                                    {{ form.contactemail.label(class= "form-control-label") }}
+                                                                                                                        {% if form.contactemail.errors %}
+                                                                                                                            {{ form.contactemail(class= "form-control form-control-lg is-invalid") }}
+                                                                                                                            <div class="invalid-feedback">
+                                                                                                                                 {% for error in form.contactemail.errors %}
+                                                                                                                                   <span class="alert-danger"> {{ error }} </span>
+                                                                                                                                 {% endfor%}
+                                                                                                                            </div>
+                                                                                                                        {% else%}
+                                                                                                                             {{ form.contactemail(class= "form-control form-control-lg") }}
+                                                                                                                        {% endif%}
+                                                                                                                    <!----- <input type="email" id="wpforms-9725-field_7" class="wpforms-field-medium" name="wpforms[fields][7]">--->
+                                                                                                                    </div>
+                                                                                                                <div id="wpforms-9725-field_6-container" class="wpforms-field wpforms-field-checkbox" data-field-id="6"><label class="wpforms-field-label" for="wpforms-9725-field_6">What Does Your Brand Need?</label>
+                                                                                                                    <ul id="wpforms-9725-field_6">
+                                                                                                                        <li class="choice-5 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_5">Social Media Management</label>
+                                                                                                                            <input type="checkbox" name="management" {% if form.management.data %} checked {% endif %}>
+
+                                                                                                                            <!---<div class="form-check">
+                                                                                                                                {{ form.management(class="form-check-input") }}
+                                                                                                                                {{ form.management.label(class="form-check-input-label") }}
+                                                                                                                            </div>--->
+                                                                                                                            
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_5" name="wpforms[fields][6][]" value="Social Media Management">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-6 depth-1">          
+                                                                                                                             <label class="wpforms-field-label-inline" for="wpforms-9725-field_6_6">Search Engine Optimization</label>
+
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.searchengine(class="form-check-input") }}
+                                                                                                                                {{ form.searchengine.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_6" name="wpforms[fields][6][]" value="Search Engine Optimization">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-3 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_3">Full Branding Packages</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.branding(class="form-check-input") }}
+                                                                                                                                {{ form.branding.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_3" name="wpforms[fields][6][]" value="Full Branding Packages">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-1 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_1">Website Development</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.website(class="form-check-input") }}
+                                                                                                                                {{ form.website.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_1" name="wpforms[fields][6][]" value="Website Development">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-2 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_2">Digital Marketing</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.digital(class="form-check-input") }}
+                                                                                                                                {{ form.digital.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_2" name="wpforms[fields][6][]" value="Digital Marketing">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-7 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_7">Graphic Designs</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.graphic(class="form-check-input") }}
+                                                                                                                                {{ form.graphic.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_7" name="wpforms[fields][6][]" value="Graphic Designs">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-8 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_8">Logo Creation</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.logocreation(class="form-check-input") }}
+                                                                                                                                {{ form.logocreation.label(class="form-check-input-label") }}
+                                                                                                                            </div>
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_8" name="wpforms[fields][6][]" value="Logo Creation">--->
+                                                                                                                            </li>
+                                                                                                                        <li class="choice-4 depth-1">
+                                                                                                                            <label class="wpforms-field-label-inline"
+                                                                                                                                for="wpforms-9725-field_6_4">Video Creation</label>
+                                                                                                                            <div class="form-check">
+                                                                                                                                {{ form.videocreation(class="form-check-input") }}
+                                                                                                                                {{ form.videocreation.label(class="form-check-input-label") }}
+                                                                                                                            </div> 
+                                                                                                                            <!---<input type="checkbox" id="wpforms-9725-field_6_4" name="wpforms[fields][6][]" value="Video Creation">--->
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                                    <div class="wpforms-field-description">Select all that apply</div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="9725"><input type="hidden" name="wpforms[author]" value="0">{{ form.submit( class="col-md-3 col-sm-6 btn btn-success") }}
+                                                                                                                <img
+                                                                                                                    src="https://www.casvodigital.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;"
+                                                                                                                    width="26" height="26" alt="Loading"></div>
+                                                                                                        </form>
                                                                                 </div>
                                                                                 <!-- .wpforms-container -->
                                                                             </div>
@@ -3041,7 +3237,7 @@ Clients</span> and Counting</h4>
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="wd-text-block reset-last-child text-left">
 
-                                                                                    <strong>Email:</strong> <a href="mailto:info@jswebtron.com" style="color:#fff;">info@jswebtron.com</a> 
+                                                                                <strong>Email:</strong> <a href="mailto:info@jswebtron.com" style="color:#fff;">info@jswebtron.com</a> 
                                                                                     <br>
                                                                                 <strong>Phone:</strong> <a href="https://wa.link/blv6r2" style="color:#fff;">+2349160112979</a>
                                                                                 </div>
@@ -3054,35 +3250,41 @@ Clients</span> and Counting</h4>
 
                                                                                     <span class="wd-label">Follow Us: </span>
 
-                                                                                    <a rel="noopener noreferrer nofollow" href="https://m.facebook.com/groups/389302297917218/?ref=share&mibextid=lURqYx" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-facebook" aria-label="Facebook social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+                                                                                    <a rel="noopener noreferrer nofollow" href="https://m.facebook.com/groups/389302297917218/?ref=share&mibextid=lURqYx" target="_blank" style="padding-top: 10px; padding-left: 12px;" class=" wd-social-icon fa fa-facebook" aria-label="Facebook social link">
+						<span class="wd-icon"></span>
+											</a>
 
                                                                                     <a rel="noopener noreferrer nofollow" href="https://twitter.com/casvodigitalng" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-twitter" aria-label="Twitter social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+						<span class="wd-icon"></span>
+											</a>
 
 
                                                                                     <a rel="noopener noreferrer nofollow" href="https://www.instagram.com/casvodigitalng/" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-instagram" aria-label="Instagram social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+						<span class="wd-icon"></span>
+											</a>
 
-                                                                                    <a rel="noopener noreferrer nofollow" href="#" target="_blank" class=" wd-social-icon fa fa-youtube" aria-label="YouTube social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+                                                                                    <a rel="noopener noreferrer nofollow" href="#" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-youtube" aria-label="YouTube social link">
+						<span class="wd-icon"></span>
+											</a>
 
                                                                                     <a rel="noopener noreferrer nofollow" href="#" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-pinterest" aria-label="Pinterest social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+						<span class="wd-icon"></span>
+											</a>
 
 
                                                                                     <a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/company/jswebtron-ltd/" target="_blank" style="padding-top: 10px; padding-left: 10px;" class=" wd-social-icon fa fa-linkedin" aria-label="Linkedin social link">
-						                                                                <span class="wd-icon"></span>
-											                                                                </a>
+						<span class="wd-icon"></span>
+											</a>
 
-                                                                                    <a rel="noopener noreferrer nofollow" href="https://wa.link/blv6r2"  target="_blank" style="padding-top: 10px; padding-left: 10px;" class="whatsapp-mobile  wd-social-icon fa fa-whatsapp" aria-label="WhatsApp social link">
-						                                                                <span class="wd-icon"></span>
-											                                        </a>      
+
+                                                                                    <a rel="noopener noreferrer nofollow" href="https://wa.link/blv6r2" target="_blank" style="padding-top: 10px; padding-left: 10px;" class="whatsapp-mobile  wd-social-icon fa fa-whatsapp" aria-label="WhatsApp social link">
+						<span class="wd-icon"></span>
+											</a>
+
+
+
+
+
 
                                                                                 </div>
 
@@ -3445,7 +3647,7 @@ Clients</span> and Counting</h4>
     </li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9765 item-level-0"><a href="{{ url_for('main.ourwork') }}" class="woodmart-nav-link"><span class="nav-link-text">Our Works</span></a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4400 current_page_item menu-item-9224 item-level-0"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link"><span class="nav-link-text">About us</span></a></li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9225 item-level-0"><a href="{{ url_for('main.contact') }}" class="woodmart-nav-link"><span class="nav-link-text">Book Your Website</span></a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9225 item-level-0"><a href="{{ url_for('main.contact') }}" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9229 item-level-0"><a href="{{ url_for('main.blog') }}" class="woodmart-nav-link"><span class="nav-link-text">Blog</span></a></li>
 </ul>
 </div>
