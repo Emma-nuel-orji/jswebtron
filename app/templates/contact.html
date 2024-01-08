@@ -2002,23 +2002,22 @@ src="https://www.facebook.com/tr?id=5908069002569791&ev=PageView&noscript=1" />
     <!-- end wrapper -->
     <div class="wd-close-side wd-fill"></div>
     <div class="mobile-nav wd-side-hidden wd-right">
-    <ul id="menu-main-navigation-1" class="mobile-pages-menu wd-nav wd-nav-mobile wd-active">
-        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9227 item-level-0"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Our Services</span></a>
-            <ul class="wd-sub-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9764 item-level-1"><a href="../../digital/digital-marketing/index.html" class="woodmart-nav-link">Digital Marketing</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9766 item-level-1"><a href="../../management/social-media-management/index.html" class="woodmart-nav-link">Social Media Management</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9226 item-level-1"><a href="../../web/web-development/index.html" class="woodmart-nav-link">Web Development</a></li>
-                <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10325 item-level-1"><a href="../../digital/digital-marketing/index.html" class="woodmart-nav-link">Search Engine Optimization</a></li> -->
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9762 item-level-1"><a href="../../allinone/all-in-one/index.html" class="woodmart-nav-link">ALL-IN-ONE PACKAGES</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9763 item-level-1"><a href="../../graphics/graphic-designs/index.html" class="woodmart-nav-link">Creative Designs</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9767 item-level-1"><a href="../../advert/video-adverts/index.html" class="woodmart-nav-link">Video Adverts</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9765 item-level-0"><a href="../../work/our-works/index.html" class="woodmart-nav-link"><span class="nav-link-text">Our Works</span></a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4400 current_page_item menu-item-9224 item-level-0"><a href="../../about/about-us/index.html" class="woodmart-nav-link"><span class="nav-link-text">About us</span></a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9225 item-level-0"><a href="https://forms.gle/Wz7p1MaPksWq8Mfk6" class="woodmart-nav-link"><span class="nav-link-text">Book Your Website</span></a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9229 item-level-0"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Blog</span></a></li>
-    </ul>
+        <ul id="menu-main-navigation-1" class="mobile-pages-menu wd-nav wd-nav-mobile wd-active">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9227 item-level-0"><a href="#" class="woodmart-nav-link"><span class="nav-link-text">Our Services</span></a>
+                <ul class="wd-sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9764 item-level-1"><a href="{{ url_for('main.digital_marketing') }}" class="woodmart-nav-link">Digital Marketing</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9766 item-level-1"><a href="{{ url_for('main.socialmediamanagement') }}" class="woodmart-nav-link">Social Media Management</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9226 item-level-1"><a href="{{ url_for('main.web') }}" class="woodmart-nav-link">Web Development</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9762 item-level-1"><a href="{{ url_for('main.all_in_one') }}" class="woodmart-nav-link">ALL-IN-ONE PACKAGES</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9763 item-level-1"><a href="{{ url_for('main.graphics') }}" class="woodmart-nav-link">Creative Designs</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9767 item-level-1"><a href="{{ url_for('main.video_ad') }}" class="woodmart-nav-link">Video Adverts</a></li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9765 item-level-0"><a href="{{ url_for('main.ourwork') }}" class="woodmart-nav-link"><span class="nav-link-text">Our Works</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4400 current_page_item menu-item-9224 item-level-0"><a href="{{ url_for('main.about') }}" class="woodmart-nav-link"><span class="nav-link-text">About us</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9225 item-level-0"><a href="{{ url_for('main.contact') }}" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9229 item-level-0"><a href="{{ url_for('main.blog') }}" class="woodmart-nav-link"><span class="nav-link-text">Blog</span></a></li>
+        </ul>
     </div>
     <!--END MOBILE-NAV-->
     <div id="wa"></div>
