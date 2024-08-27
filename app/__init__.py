@@ -73,4 +73,5 @@ app.register_blueprint(posts)
 app.register_blueprint(admin)
 app.register_blueprint(main)
 
+
 # return app
