@@ -8,6 +8,7 @@ from flask_mail import Mail, Message
 from app.config import mail_username, mail_password
 
 app = Flask(__name__)
+application = app
 # app.config.from_object(config)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
