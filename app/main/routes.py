@@ -16,7 +16,7 @@ def home():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
            Brand Name :  {form.brand_name.data}
 
@@ -49,9 +49,7 @@ def home():
 
 @main.route('/blog', methods=['GET', 'POST'])
 def blog():
-    page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=8)
-    return render_template("blog.html", posts=posts)
+    return render_template("blog.html")
 
 
 @main.route("/about", methods=['GET', 'POST'])
@@ -60,7 +58,7 @@ def about():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
            Brand Name :  {form.brand_name.data}
 
@@ -98,7 +96,7 @@ def web():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
            Brand Name :  {form.brand_name.data}
 
@@ -136,7 +134,7 @@ def graphics():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -174,7 +172,7 @@ def ourwork():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -212,7 +210,7 @@ def socialmediamanagement():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
         
           Brand Name :  {form.brand_name.data}
@@ -250,7 +248,7 @@ def video_ad():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
         
           Brand Name :  {form.brand_name.data}
@@ -288,7 +286,7 @@ def rightcolor():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -326,7 +324,7 @@ def things_to_avoid():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -363,7 +361,7 @@ def clientinfo():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -401,7 +399,7 @@ def digital_marketing():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -439,7 +437,7 @@ def all_in_one():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
          
          Brand Name :  {form.brand_name.data}
@@ -477,7 +475,7 @@ def terms():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
            Brand Name :  {form.brand_name.data}
@@ -515,7 +513,7 @@ def privacy():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
           
           Brand Name :  {form.brand_name.data}
@@ -553,7 +551,7 @@ def bestlogo():
     form = ContactusForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
            Brand Name :  {form.brand_name.data}
 
@@ -590,7 +588,7 @@ def contact():
     form = ContactForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
-                      recipients=['jswebtron@gmail.com'])
+                      recipients=['info@jswebtron.com'])
         msg.body = f"""
            Name :  {form.name.data}
 
