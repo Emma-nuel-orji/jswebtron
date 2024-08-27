@@ -596,7 +596,7 @@ def contact():
            
            Phone :  {form.contact_phone.data}
 
-           Brand Name :  {form.subject.data}
+           Brand Name :  {form.brand_name.data}
 
            Message :  {form.message.data}
            """

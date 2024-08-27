@@ -167,15 +167,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-8294c77 elementor-widget elementor-widget-wpforms" data-id="8294c77" data-element_type="widget" data-widget_type="wpforms.default">
+                    <div class="elementor-element elementor-element-8294c77 elementor-widget elementor-widget-wpforms" >
                         <div class="elementor-widget-container">
-                            <div class="wpforms-container wpforms-container-full" id="wpforms-9029">
-                                <form id="wpforms-form-9029" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="9029" method="POST" enctype="multipart/form-data" action="" data-token="9ff81bac441c6d31c6121605e235b893">
+                            <div class="wpforms-container wpforms-container-full" >
+                                <form  class="generic-form"  method="POST"  action="" >
                                     {{ form.hidden_tag() }}
                                   
                                     <div class="wpforms-field-container">
-                                        <div id="wpforms-9029-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
-                                            <label class="wpforms-field-label" for="wpforms-9029-field_1">Your Name <span class="wpforms-required-label">*</span></label>
+                                        <input type="hidden" name="_token" value="b8XSHCUVfMLjsbVHhHFwOHXgMOZgN7sJxOa51c3C" autocomplete="off"> 
+                                        <div  class="wpforms-field wpforms-field-name" >
+                                            <label class="wpforms-field-label" >Your Name <span class="wpforms-required-label">*</span></label>
                                             {{ form.name.label(class= "form-control-label") }}
                                                 {% if form.name.errors %}
                                                     {{ form.name(class= "form-control form-control-lg is-invalid") }}
@@ -189,7 +190,8 @@
                                                 {% endif%}
                                             
                                             </div>
-                                        <div id="wpforms-9029-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><label class="wpforms-field-label" for="wpforms-9029-field_2">Your Email <span class="wpforms-required-label">*</span></label>
+                                        <div  class="wpforms-field wpforms-field-email" >
+                                            <label class="wpforms-field-label" >Your Email <span class="wpforms-required-label">*</span></label>
                                             {{ form.contact_email.label(class= "form-control-label") }}
                                             {% if form.contact_email.errors %}
                                                 {{ form.contact_email(class= "form-control form-control-lg is-invalid") }}
@@ -202,7 +204,7 @@
                                                   {{ form.contact_email(class= "form-control form-control-lg") }}
                                              {% endif%}
                                         </div>
-                                        <div id="wpforms-9029-field_3-container" class="wpforms-field wpforms-field-phone" data-field-id="3"><label class="wpforms-field-label" for="wpforms-9029-field_3">Your Phone</label>
+                                        <div  class="wpforms-field wpforms-field-phone" ><label class="wpforms-field-label" >Your Phone</label>
                                             {{ form.contact_phone.label(class= "form-control-label") }}
                                               {% if form.contact_phone.errors %}
                                                   {{ form.contact_phone(class= "form-control form-control-lg is-invalid") }}
@@ -215,21 +217,21 @@
                                                     {{ form.contact_phone(class= "form-control form-control-lg") }}
                                                {% endif%}
                                         </div>
-                                        <div id="wpforms-9029-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label" for="wpforms-9029-field_4">Brand Name</label>
-                                            {{ form.subject.label(class= "form-control-label") }}
-                                            {% if form.subject.errors %}
-                                               {{ form.subject(class= "form-control form-control-lg is-invalid") }}
+                                        <div  class="wpforms-field wpforms-field-text" ><label class="wpforms-field-label">Brand Name</label>
+                                            {{ form.brand_name.label(class= "form-control-label") }}
+                                            {% if form.brand_name.errors %}
+                                               {{ form.brand_name(class= "form-control form-control-lg is-invalid") }}
                                                 <div class="invalid-feedback">
-                                                     {% for error in form.subject.errors %}
+                                                     {% for error in form.brand_name.errors %}
                                                        <span class="alert-danger"> {{ error }} </span>
                                                      {% endfor%}
                                                 </div>
                                             {% else%}
-                                                 {{ form.subject(class= "form-control form-control-lg") }}
+                                                 {{ form.brand_name(class= "form-control form-control-lg") }}
                                             {% endif%}
                                         </div>
-                                        <div
-                                            id="wpforms-9029-field_5-container" class="wpforms-field wpforms-field-textarea" data-field-id="5"><label class="wpforms-field-label" for="wpforms-9029-field_5">Your Message</label>
+                                        <div class="wpforms-field wpforms-field-textarea" >
+                                            <label class="wpforms-field-label" >Your Message</label>
                                             {{ form.message.label(class= "form-control-label") }}
                                                 {% if form.message.errors %}
                                                     {{ form.message(class= "form-control form-control-lg is-invalid") }}
@@ -245,7 +247,7 @@
                             </div>
                             <br>
                             <div class="wpforms-submit-container">
-                                {{ form.submit( class="col-md-3 col-sm-6 btn btn-success") }}
+                                {{ form.submit( class="col-md-4 col-sm-6 btn btn-success") }}
                             </div>
                             </form>
                         </div>

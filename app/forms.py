@@ -50,9 +50,8 @@ class ContactForm(FlaskForm):
     name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
     contact_email = StringField('', validators=[DataRequired(), Email()])
     contact_phone = StringField('', validators=[DataRequired()])
-    subject = StringField('', validators=[DataRequired()])
-    message = TextAreaField('', validators=[DataRequired()])
     brand_name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    message = TextAreaField('', validators=[DataRequired()])
     submit = SubmitField('Send Mail')
 
 
