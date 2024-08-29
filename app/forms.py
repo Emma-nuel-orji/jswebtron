@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import SubmitField, StringField, PasswordField, BooleanField, TextAreaField
+from wtforms import SubmitField, StringField, PasswordField, BooleanField, TextAreaField, RadioField
 from wtforms.validators import DataRequired, ValidationError, length, equal_to, Email
 
 from app.models import User
@@ -68,3 +68,23 @@ class ContactusForm(FlaskForm):
     logocreation = BooleanField('')
     videocreation = BooleanField('')
     submit = SubmitField('Send Mail')
+    
+class ClientinfoForm(FlaskForm):
+    name = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    email = StringField('', validators=[DataRequired(), Email()])
+    phone = StringField('', validators=[DataRequired()])
+    
+    companyname = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    companyaddress = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    addressline = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    city = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    products = TextAreaField('', validators=[DataRequired()])
+    target = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    describe = TextAreaField('', validators=[DataRequired()])
+    achieve = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    brandcolor = StringField('', validators=[DataRequired(), length(min=2, max=2000)])
+    
+    slogan = RadioField('', validators=[DataRequired()], choices=[('Yes'), ('No')])
+    cos_contact = RadioField('', validators=[DataRequired()], choices=[('Call'), ('Email'), ('WhatsApp'), ('Website')])
+    socialmedia = RadioField('', validators=[DataRequired()], choices=[('Instagram'), ('Facebook'), ('Twitter'), ('Linkedin'), ('TikTok')])
+    submit = SubmitField('SUBMIT')

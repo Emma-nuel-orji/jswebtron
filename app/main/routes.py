@@ -3,7 +3,7 @@ from flask_login import login_required, current_user
 from flask_mail import Message
 
 from app import db, mail
-from app.forms import ContactForm, ContactusForm
+from app.forms import ContactForm, ContactusForm, ClientinfoForm
 from app import mail
 from app.models import Post, User
 
@@ -126,6 +126,44 @@ def web():
         flash('your message have been sent', 'success')
         return redirect(url_for('main.home'))
     return render_template("web.html", title='Contactus Form', form=form)
+
+
+@main.route("/app", methods=['GET', 'POST'])
+def app():
+    user = User
+    form = ContactusForm()
+    if form.validate_on_submit():
+        msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
+                      recipients=['info@jswebtron.com'])
+        msg.body = f"""
+           Brand Name :  {form.brand_name.data}
+
+           Email: {form.contactemail.data}
+           
+           Phone :  {form.phonenumber.data}
+        
+           Social Media Management : {form.management.data}
+           
+           Search Engine Optimization : {form.searchengine.data}
+           
+           Full Branding Packages : {form.branding.data}
+           
+           Website Development : {form.website.data}
+           
+           Digital Marketing : {form.digital.data}
+           
+           Graphic Designs : {form.graphic.data}
+           
+           Logo Creation : {form.logocreation.data}
+           
+           Video Creation : {form.videocreation.data}
+
+           
+           """
+        mail.send(msg)
+        flash('your message have been sent', 'success')
+        return redirect(url_for('main.home'))
+    return render_template("app.html", title='Contactus Form', form=form)
 
 
 @main.route("/graphics", methods=['GET', 'POST'])
@@ -355,36 +393,45 @@ def things_to_avoid():
         return redirect(url_for('main.home'))
     return render_template("5-things-to-avoid.html", title='Contactus Form', form=form)
 
+
 @main.route("/clientinfo", methods=['GET', 'POST'])
 def clientinfo():
     user = User
-    form = ContactusForm()
+    form = ClientinfoForm()
     if form.validate_on_submit():
         msg = Message(f'New Message from {user.email}', sender=f'{user.email}',
                       recipients=['info@jswebtron.com'])
         msg.body = f"""
           
-          Brand Name :  {form.brand_name.data}
+          Client Name :  {form.name.data}
 
-           Email: {form.contactemail.data}
+           Email: {form.email.data}
            
-           Phone :  {form.phonenumber.data}
+           Phone :  {form.phone.data}
         
-           Social Media Management : {form.management.data}
+           Company's Name : {form.companyname.data}
            
-           Search Engine Optimization : {form.searchengine.data}
+           Company address  : {form.companyaddress.data}
            
-           Full Branding Packages : {form.branding.data}
+           Address Line 1 : {form.addressline.data}
            
-           Website Development : {form.website.data}
+           city : {form.city.data}
            
-           Digital Marketing : {form.digital.data}
+           What are your products or services? : {form.products.data}
            
-           Graphic Designs : {form.graphic.data}
+           Who is your target audience? : {form.target.data}
            
-           Logo Creation : {form.logocreation.data}
+           Describe your brand in as much detail as possible : {form.describe.data}
            
-           Video Creation : {form.videocreation.data}
+           What do you hope to achieve by working with us? : {form.achieve.data}
+           
+           Brand colors : {form.brandcolor.data}
+           
+           Do you have a tagline or slogan? : {form.slogan.data}
+           
+           How can customers contact you? : {form.cos_contact.data}
+           
+           Social media : {form.socialmedia.data}
            
            """
         mail.send(msg)
